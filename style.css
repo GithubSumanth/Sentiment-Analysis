@@ -1,0 +1,318 @@
+.margin-top-low {
+  margin-top: 2rem;
+}
+
+.margin-top-med {
+  margin-top: 3rem;
+}
+
+.margin-bottom-high {
+  margin-bottom: 8rem;
+}
+
+.raise {
+  transform: translateZ(10rem);
+}
+
+.hide {
+  display: none;
+}
+
+.heading-box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  padding: 1.5rem;
+  line-height: 1.4;
+}
+
+.heading {
+  color: #253649;
+  font-family: "Overpass", sans-serif;
+}
+.heading--primary {
+  font-size: 3.6rem;
+  font-weight: 900;
+  letter-spacing: -0.15rem;
+  line-height: 1.2;
+}
+.heading--secondary {
+  font-size: 4.4rem;
+}
+.heading--secondary--insp {
+  width: 100%;
+  color: #2d4059;
+  font-weight: 900;
+}
+.heading--tertiary {
+  font-size: 2rem;
+  font-weight: 800;
+  letter-spacing: -0.05rem;
+}
+.heading--tertiary--modifier {
+  width: 80%;
+}
+.heading--quaternary {
+  font-size: 1.8rem;
+}
+.heading--insp {
+  font-size: 6rem;
+  color: #2d4059;
+  font-weight: 900;
+  line-height: 1.2;
+}
+.heading--time {
+  color: #fff;
+}
+.heading--code {
+  color: #fff;
+  font-size: 2.8rem;
+}
+.heading--card {
+  color: #fff;
+  font-size: 3.2rem;
+}
+.heading--teacher {
+  color: #fff;
+}
+.heading--timetable {
+  font-size: 6rem;
+}
+
+.para {
+  font-weight: 500;
+  width: 100%;
+  font-size: 1.2rem;
+  color: #364f6b;
+  line-height: 1.6;
+}
+
+.logo-box {
+  height: 16rem;
+  width: 16rem;
+  background-color: #fff;
+  color: #364f6b;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0.6rem solid #364f6b;
+  position: relative;
+}
+
+.logo {
+  font-size: 6.4rem;
+  font-family: "Oleo Script", cursive;
+  transform: rotate(-15deg);
+}
+
+.nav-btn-box {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  position: fixed;
+  top: 3.4rem;
+  right: 3.6rem;
+  background-color: #fff;
+  z-index: 200;
+  box-shadow: 0 0.8rem 1.2rem rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  backface-visibility: hidden;
+}
+
+.holder {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.line {
+  position: absolute;
+  height: 0.3rem;
+  width: 3rem;
+  background-color: #2d4059;
+  transition: all 0.3s;
+  backface-visibility: hidden;
+}
+.line-1 {
+  top: 43%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.line-1--modified {
+  top: 46% !important;
+  left: 20% !important;
+  transform: rotate(45deg) !important;
+}
+.line-2 {
+  top: 58%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.line-2--modified {
+  top: 46% !important;
+  left: 20% !important;
+  transform: rotate(-45deg) !important;
+}
+
+.circle {
+  height: 20rem;
+  width: 20rem;
+  border-radius: 50%;
+  background-color: rgba(135, 133, 162, 0.8);
+  position: absolute;
+}
+.circle-1 {
+  left: 6rem;
+  bottom: 20rem;
+}
+.circle-2 {
+  top: 1rem;
+  right: 10rem;
+}
+
+.nav-box {
+  position: fixed;
+  top: 1.5rem;
+  right: 1.5rem;
+  bottom: 1.3rem;
+  background-color: transparent;
+  width: 35%;
+  z-index: 100;
+  clip-path: circle(2% at 90.5% 7.5%);
+  transition: all 0.4s ease-in-out;
+}
+.nav-box--modified {
+  clip-path: circle(200% at 95.5% 9.5%) !important;
+}
+.nav-box-inner {
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.nav {
+  height: 100%;
+  width: 100%;
+  backdrop-filter: blur(2rem);
+}
+.nav__container {
+  list-style: none;
+  padding: 4rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0.9)
+  );
+  box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.3);
+}
+.nav .nav__list {
+  padding: 0.2rem 0;
+  margin: 1.6rem 0;
+  display: inline-block;
+  position: relative;
+  z-index: 5;
+}
+.nav .nav__list::after {
+  content: "";
+  display: block;
+  height: 0.3rem;
+  width: 0%;
+  background-color: #364f6b;
+  transition: all 0.4s;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+.nav .nav__list:hover::after {
+  width: 100%;
+}
+.nav .nav__link {
+  text-decoration: none;
+  text-transform: uppercase;
+  display: block;
+  font-size: 3.2rem;
+  font-family: "Overpass", sans-serif;
+  font-weight: 800;
+  color: #364f6b;
+  padding: 0 1rem;
+}
+
+.header {
+  min-height: 95.5vh;
+  display: flex;
+  justify-content: flex-start;
+  border-radius: 0.5rem;
+}
+.header__main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 5rem;
+}
+.header__main--1 {
+  width: 32%;
+  background-color: #90e0ef;
+}
+.header__main--2 {
+  flex: 1;
+  background-image: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0.9),
+      rgba(255, 255, 255, 0.1)
+    ),
+    url(student.jpg);
+  background-position: bottom;
+  background-size: cover;
+}
+.header__main__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+}
+
+.text__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.text__content--name {
+  width: 95%;
+}
+.text__content--insp {
+  text-align: left;
+  width: 90%;
+  margin-left: 3rem;
+}
