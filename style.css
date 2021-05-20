@@ -6,6 +6,24 @@
   margin-top: 3rem;
 }
 
+.margin-top-high {
+  margin-top: 5rem;
+}
+
+.margin-top-bottom-low {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.margin-top-bottom-med {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.margin-bottom-low {
+  margin-bottom: 2rem;
+}
+
 .margin-bottom-high {
   margin-bottom: 8rem;
 }
@@ -50,13 +68,19 @@ body {
   font-family: "Overpass", sans-serif;
 }
 .heading--primary {
-  font-size: 3.6rem;
+  font-size: 4rem;
   font-weight: 900;
   letter-spacing: -0.15rem;
   line-height: 1.2;
 }
+
+.heading--primary--modified {
+  font-size: 4.6rem;
+  font-weight: 800;
+}
+
 .heading--secondary {
-  font-size: 4.4rem;
+  font-size: 3rem;
 }
 .heading--secondary--insp {
   width: 100%;
@@ -73,6 +97,10 @@ body {
 }
 .heading--quaternary {
   font-size: 1.8rem;
+}
+
+.heading--quaternary--magnified {
+  font-size: 2rem;
 }
 .heading--insp {
   font-size: 6rem;
@@ -315,4 +343,70 @@ body {
   text-align: left;
   width: 90%;
   margin-left: 3rem;
+}
+
+/* ----------------------------------------------------------------------------- */
+
+/* MEMBERS */
+
+.section_members {
+  text-align: center;
+  padding: 1rem;
+}
+
+.members {
+  padding: 1.5rem;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.members-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.each-member-container {
+  display: flex;
+  padding: 0 2rem 2rem;
+  border-radius: 0.4rem;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.circle-image-container {
+  width: 22rem;
+  height: 22rem;
+  border-radius: 50%;
+  background-color: #eee;
+  margin: 2rem 0 3rem;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  padding: 1.5rem 4rem;
+  border-radius: 10rem;
+  color: #fff;
+}
+
+.btn--go-to-project:link,
+.btn--go-to-project:visited {
+  background-color: #2d4059;
+  font-size: 2rem;
+  font-weight: 500;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
+  transition: all 0.2s;
+}
+
+.btn--go-to-project:hover {
+  transform: translateY(-0.5rem);
+  box-shadow: 0 1.5rem 2.5rem rgba(0, 0, 0, 0.2);
+  background-color: #364f6b;
+}
+
+.btn--go-to-project:active {
+  transform: translateY(-0.2rem);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
 }
