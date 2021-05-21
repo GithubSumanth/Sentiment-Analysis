@@ -24,6 +24,10 @@
   margin-bottom: 2rem;
 }
 
+.margin-bottom-med {
+  margin-bottom: 7rem;
+}
+
 .margin-bottom-high {
   margin-bottom: 8rem;
 }
@@ -409,4 +413,98 @@ body {
 .btn--go-to-project:active {
   transform: translateY(-0.2rem);
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.img-profile {
+  width: 22rem;
+  height: 22rem;
+  border-radius: 10rem;
+}
+
+.img-profile-2 {
+  width: 22rem;
+  height: 22rem;
+}
+/* ------------------------------------------------------------------- */
+/* PROJECT */
+
+.section_project {
+  height: 95vh;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-box {
+  height: 90vh;
+  width: 80%;
+  margin: 0 auto;
+  background-color: #eee;
+}
+
+.heading--big {
+  font-size: 6rem;
+  margin: 5rem 2rem 1rem;
+}
+
+.search__container {
+  height: 10vh;
+  position: relative;
+}
+
+.select {
+  box-shadow: 0 0.5rem 1.3rem rgba(0, 0, 0, 0.3);
+  position: absolute;
+  width: 35%;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 0.8rem;
+  cursor: pointer;
+  transition: all 0.1s;
+  background-color: #fff;
+}
+.select--modifier {
+  border-radius: 0.8rem;
+}
+.select--dataset {
+  z-index: 10;
+}
+
+.default {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.arrow {
+  cursor: pointer;
+}
+
+.search__inner__container {
+  list-style: none;
+  background-color: #90e0ef;
+  border-bottom-left-radius: 0.8rem;
+  border-bottom-right-radius: 0.8rem;
+}
+
+ul .option:hover {
+  background-color: #bdecf5;
+}
+
+.option {
+  padding: 1rem 2rem;
+}
+.option--default {
+  padding: 0;
+}
+
+/* ----------------------------------------------------- */
+/* DASHBOARD */
+
+.section_dashboard {
+  padding: 2rem;
+  text-align: center;
 }
